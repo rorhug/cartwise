@@ -1,24 +1,42 @@
-# TypeScript Next.js example
+# cartwise
 
-This is a really simple project that shows the usage of Next.js with TypeScript.
+puts the instacart receipt into splitwise, itemized
 
-## Deploy your own
+TODO
+- [ ] Parse the instacart receipt into a 2 array of [[name, price], ...]
+- [ ] request from splitwise the names of those in the group
+- [ ] post to splitwise a request to setup this itemised expense
+- [ ] profit
 
-Deploy the example using [Vercel](https://vercel.com):
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/vercel/next.js/tree/canary/examples/with-typescript)
 
-## How to use it?
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-typescript with-typescript-app
-# or
-yarn create next-app --example with-typescript with-typescript-app
 ```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/import?filter=next.js&utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+cost: 5
+currency_code: USD
+group_id: 21391998
+users__0__user_id: 4348166
+users__0__paid_share: 5.00
+users__0__owed_share: 3.50
+users__1__user_id: 36079180
+users__1__paid_share: 0.00
+users__1__owed_share: 1.50
+category_id: 18
+id: 1110907095
+description: test
+repeats: false
+repeat_interval: never
+email_reminder: false
+email_reminder_in_advance: -1
+payment: false
+creation_method: equal
+transaction_method: offline
+date: 2020-10-27T05:26:58Z
+details: this - 3.00 (R2 Hughes, Rory Hughes)
+that - 2.00 (Rory Hughes)
+Tax: R2 Hughes - 0.00, Rory Hughes - 0.00
+Tip: R2 Hughes - 0.00, Rory Hughes - 0.00
+```
 
 ## Notes
 
